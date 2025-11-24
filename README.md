@@ -39,17 +39,21 @@ Blind and low-vision individuals often get limited or incomplete information fro
 ## How The App Works
 
 **1. Upload an Image**
+
 Users select a JPG/PNG file. The app displays the original image.
 
 **2. Model Analysis**  
+
 - The image is preprocessed and passed to a pretrained ResNet18 model.
 - Grad-CAM generates a heatmap from the final convolution layer.
 - The app produces the predicted label, model confidence, and a simple spatial phrase.
 
 **3. Visual Explanation**  
+
 The Grad-CAM heatmap is blended with the uploaded image to show where the model focused.
 
 **4. Audio Explanation**  
+
 A spoken explanation is generated using gTTS to support blind and low-vision users.
 
 
